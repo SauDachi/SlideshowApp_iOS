@@ -14,6 +14,7 @@
 		C356FE5D22B3765C0037AAE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C356FE5B22B3765C0037AAE8 /* LaunchScreen.storyboard */; };
 		C356FE6822B3765C0037AAE8 /* SlideshowApp_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C356FE6722B3765C0037AAE8 /* SlideshowApp_iOSTests.swift */; };
 		C356FE7322B3765C0037AAE8 /* SlideshowApp_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C356FE7222B3765C0037AAE8 /* SlideshowApp_iOSUITests.swift */; };
+		C356FE8122B377A90037AAE8 /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C356FE8022B377A90037AAE8 /* DetailedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		C356FE6E22B3765C0037AAE8 /* SlideshowApp_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlideshowApp_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C356FE7222B3765C0037AAE8 /* SlideshowApp_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideshowApp_iOSUITests.swift; sourceTree = "<group>"; };
 		C356FE7422B3765C0037AAE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C356FE8022B377A90037AAE8 /* DetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				C356FE5922B3765C0037AAE8 /* Assets.xcassets */,
 				C356FE5B22B3765C0037AAE8 /* LaunchScreen.storyboard */,
 				C356FE5E22B3765C0037AAE8 /* Info.plist */,
+				C356FE8022B377A90037AAE8 /* DetailedViewController.swift */,
 			);
 			path = SlideshowApp_iOS;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			files = (
 				C356FE5522B3765B0037AAE8 /* ViewController.swift in Sources */,
 				C356FE5322B3765B0037AAE8 /* AppDelegate.swift in Sources */,
+				C356FE8122B377A90037AAE8 /* DetailedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
