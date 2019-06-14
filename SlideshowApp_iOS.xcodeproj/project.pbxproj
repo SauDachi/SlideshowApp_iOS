@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C302320522B387180098BC19 /* image1.png in Resources */ = {isa = PBXBuildFile; fileRef = C302320222B387170098BC19 /* image1.png */; };
+		C302320622B387180098BC19 /* image3.png in Resources */ = {isa = PBXBuildFile; fileRef = C302320322B387170098BC19 /* image3.png */; };
+		C302320722B387180098BC19 /* image2.png in Resources */ = {isa = PBXBuildFile; fileRef = C302320422B387180098BC19 /* image2.png */; };
 		C356FE5322B3765B0037AAE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C356FE5222B3765B0037AAE8 /* AppDelegate.swift */; };
 		C356FE5522B3765B0037AAE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C356FE5422B3765B0037AAE8 /* ViewController.swift */; };
 		C356FE5822B3765B0037AAE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C356FE5622B3765B0037AAE8 /* Main.storyboard */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C302320222B387170098BC19 /* image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image1.png; sourceTree = "<group>"; };
+		C302320322B387170098BC19 /* image3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image3.png; sourceTree = "<group>"; };
+		C302320422B387180098BC19 /* image2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image2.png; sourceTree = "<group>"; };
 		C356FE4F22B3765B0037AAE8 /* SlideshowApp_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideshowApp_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C356FE5222B3765B0037AAE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C356FE5422B3765B0037AAE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +89,9 @@
 				C356FE6622B3765C0037AAE8 /* SlideshowApp_iOSTests */,
 				C356FE7122B3765C0037AAE8 /* SlideshowApp_iOSUITests */,
 				C356FE5022B3765B0037AAE8 /* Products */,
+				C302320222B387170098BC19 /* image1.png */,
+				C302320422B387180098BC19 /* image2.png */,
+				C302320322B387170098BC19 /* image3.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -233,7 +242,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C356FE5D22B3765C0037AAE8 /* LaunchScreen.storyboard in Resources */,
+				C302320722B387180098BC19 /* image2.png in Resources */,
 				C356FE5A22B3765C0037AAE8 /* Assets.xcassets in Resources */,
+				C302320622B387180098BC19 /* image3.png in Resources */,
+				C302320522B387180098BC19 /* image1.png in Resources */,
 				C356FE5822B3765B0037AAE8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

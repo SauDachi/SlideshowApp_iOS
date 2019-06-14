@@ -98,13 +98,13 @@
                                     <navigationItem title="Title" id="7UI-7f-O87">
                                         <barButtonItem key="leftBarButtonItem" title="&lt; 戻る" id="R3j-kE-38J">
                                             <connections>
-                                                <segue destination="BYZ-38-t0r" kind="show" id="eJ8-Cd-JYr"/>
+                                                <action selector="back:" destination="zie-Ah-MhN" id="Agf-W7-YTB"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image2" translatesAutoresizingMaskIntoConstraints="NO" id="lVJ-O5-5Xg">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lVJ-O5-5Xg">
                                 <rect key="frame" x="0.0" y="150" width="320" height="268"/>
                             </imageView>
                         </subviews>
@@ -123,6 +123,7 @@
                     </view>
                     <connections>
                         <outlet property="UIImageView" destination="lVJ-O5-5Xg" id="du5-gu-tYT"/>
+                        <outlet property="backButton" destination="R3j-kE-38J" id="5Ge-iw-gKo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1cw-bO-lQZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -130,7 +131,4 @@
             <point key="canvasLocation" x="1370.625" y="26.408450704225352"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="image2" width="320" height="320"/>
-    </resources>
 </document>
