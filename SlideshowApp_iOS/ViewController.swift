@@ -9,7 +9,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     @IBOutlet weak var slideImage: UIImageView!
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var slideButton: UIButton!
@@ -101,18 +100,12 @@ class ViewController: UIViewController {
         slideImage.image = images[imageIndex]
     }
     
-    //スライド停止
-    func stop(){
-        // タイマーを停止する
-        self.timer.invalidate()
-        self.timer = nil
-        
-        //ボタンのテキスト変更
-        slideButton.setTitle("再生", for: .normal)
-        
-        //他２つのボタンを有効化
-        self.backButton.isEnabled = true
-        self.nextButton.isEnabled = true
+    //画像渡し
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        //遷移先取得
+        let detailedViewController:DetailedViewController = segue.destination as! DetailedViewController
+        //遷移先の変数へsenderの内容渡す
+        detailedViewController.detailedImage = sender as? UIImage
     }
     
     //segue
@@ -125,12 +118,18 @@ class ViewController: UIViewController {
         }
     }
     
-    //画像渡し
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        //segueから遷移先のScaleViewContorllerを取得する
-        let detailedViewController:DetailedViewController = segue.destination as! DetailedViewController
-        //遷移先のScaleViewControllerで宣言している値を渡す
-        detailedViewController.detailedImage = sender as? UIImage
+    //スライド停止
+    func stop(){
+        // タイマーを停止する
+        self.timer.invalidate()
+        self.timer = nil
+        
+        //ボタンのテキスト変更
+        slideButton.setTitle("再生", for: .normal)
+        
+        //他２つのボタンを有効化
+        self.backButton.isEnabled = true
+        self.nextButton.isEnabled = true
     }
 }
 

@@ -69,13 +69,13 @@
                         <outlet property="nextButton" destination="47p-xr-4bY" id="EPN-Mj-UYH"/>
                         <outlet property="slideButton" destination="xxP-HV-nsy" id="2XI-VB-58I"/>
                         <outlet property="slideImage" destination="Znu-WR-px6" id="jQY-m8-hWq"/>
+                        <segue destination="zie-Ah-MhN" kind="show" identifier="showImage" id="Q5e-tP-4dl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="OnY-e2-SBT">
                     <connections>
                         <action selector="onTapImage:" destination="BYZ-38-t0r" id="aKY-DI-Z6W"/>
-                        <segue destination="zie-Ah-MhN" kind="show" identifier="showImage" id="uqT-XD-OWu"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -90,7 +90,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oKx-xI-8QM">
-                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="tyh-QE-IAy"/>
+                                </constraints>
                                 <items>
                                     <navigationItem title="Title" id="7UI-7f-O87">
                                         <barButtonItem key="leftBarButtonItem" title="&lt; 戻る" id="R3j-kE-38J">
@@ -101,20 +104,20 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lVJ-O5-5Xg">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image2" translatesAutoresizingMaskIntoConstraints="NO" id="lVJ-O5-5Xg">
+                                <rect key="frame" x="0.0" y="150" width="320" height="268"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="lVJ-O5-5Xg" firstAttribute="top" secondItem="oKx-xI-8QM" secondAttribute="bottom" id="KpE-fM-yyO"/>
-                            <constraint firstItem="oKx-xI-8QM" firstAttribute="leading" secondItem="uhh-LS-uet" secondAttribute="leading" id="PiL-do-TSd"/>
-                            <constraint firstItem="lVJ-O5-5Xg" firstAttribute="leading" secondItem="uhh-LS-uet" secondAttribute="leading" id="ThS-P3-uNV"/>
-                            <constraint firstItem="oKx-xI-8QM" firstAttribute="top" secondItem="uhh-LS-uet" secondAttribute="top" id="VZv-1e-4KT"/>
-                            <constraint firstItem="oKx-xI-8QM" firstAttribute="trailing" secondItem="uhh-LS-uet" secondAttribute="trailing" id="ges-gf-Rvz"/>
-                            <constraint firstItem="lVJ-O5-5Xg" firstAttribute="bottom" secondItem="uhh-LS-uet" secondAttribute="bottom" id="kuA-Tx-To5"/>
-                            <constraint firstItem="lVJ-O5-5Xg" firstAttribute="top" secondItem="oKx-xI-8QM" secondAttribute="bottom" id="s02-vN-vMZ"/>
-                            <constraint firstItem="lVJ-O5-5Xg" firstAttribute="trailing" secondItem="uhh-LS-uet" secondAttribute="trailing" id="yNl-VG-nHi"/>
+                            <constraint firstItem="lVJ-O5-5Xg" firstAttribute="leading" secondItem="uhh-LS-uet" secondAttribute="leading" id="0jq-qh-gtY"/>
+                            <constraint firstItem="oKx-xI-8QM" firstAttribute="leading" secondItem="uhh-LS-uet" secondAttribute="leading" id="1sy-gV-nfn"/>
+                            <constraint firstItem="lVJ-O5-5Xg" firstAttribute="centerY" secondItem="oZo-WC-pdX" secondAttribute="centerY" id="C35-cG-GCd"/>
+                            <constraint firstItem="oKx-xI-8QM" firstAttribute="top" secondItem="uhh-LS-uet" secondAttribute="top" id="QEo-a9-ZL9"/>
+                            <constraint firstItem="oKx-xI-8QM" firstAttribute="trailing" secondItem="uhh-LS-uet" secondAttribute="trailing" id="cOU-3o-j36"/>
+                            <constraint firstItem="lVJ-O5-5Xg" firstAttribute="trailing" secondItem="uhh-LS-uet" secondAttribute="trailing" id="cfO-pJ-ctW"/>
+                            <constraint firstItem="lVJ-O5-5Xg" firstAttribute="top" secondItem="oKx-xI-8QM" secondAttribute="bottom" constant="90" id="pnD-Fu-49B"/>
+                            <constraint firstItem="lVJ-O5-5Xg" firstAttribute="centerX" secondItem="oZo-WC-pdX" secondAttribute="centerX" id="wZl-zm-Sdg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uhh-LS-uet"/>
                     </view>
@@ -124,7 +127,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1cw-bO-lQZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1372" y="26.53673163418291"/>
+            <point key="canvasLocation" x="1370.625" y="26.408450704225352"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="image2" width="320" height="320"/>
+    </resources>
 </document>
